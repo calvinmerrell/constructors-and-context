@@ -18,12 +18,11 @@
 */
 
 //Code Here
-function user = {
-  username = "Paul",
-  email = "Paully@gmail.com",
-  getUsername = function(){
-    return ( this.username 
-    )
+function user() {
+  this.username = "Paul",
+  this.email = "Paully@gmail.com",
+  this.getUsername = function(){
+    return (this.user.username)
   }
 }
 
@@ -46,7 +45,7 @@ function Animal(name, species, food) {
 }
 
 //Code Here
-let turtle = new Animal(Max,reptile,berries)
+const animal1 = new Animal("Fred","reptile","berries")
 ////////// PROBLEM 3 //////////
 
 /*
@@ -76,7 +75,7 @@ function whatIsThis() {
 }
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
-let context1 = product
+let context1 = window
 
 let product = {
   name: 'snake plant',
